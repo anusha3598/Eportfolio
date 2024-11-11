@@ -25,7 +25,7 @@ a:hover {
 
 /* Header and Navigation */
 .header {
-    background-color: #1b1b1b;
+    background-color: #f5f5f5;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     padding: 20px 0;
     display: flex;
