@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+<!-- AOS Library for animations -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" data-aos="fade-down">
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about" data-aos="fade-up" style="color:white;">About</a></li>
+                <li><a href="#projects" data-aos="fade-up" data-aos-delay="100" style="color: white;">Projects</a></li>
+                <li><a href="#contact" data-aos="fade-up" style="color: white;">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+<section id="about" class="about-section" data-aos="fade-up">
+    <div class="about-content" data-aos="flip-left">
+        <div class="about-details">
+            <img src="WhatsApp.jpeg" alt="Profile Picture" class="profile-image">
+        </div>
+        <h2 style="color: black;">Anusha Mylavarapu</h2>
+        <div class="about-extra">
+            
+            
+            <section class="intro-section">
+            <p class="intro-text">
+                Hey there! I’m Anusha, a passionate Master’s student diving deep into the world of Computer Science at the University of Florida. My journey began in India, where I earned my undergraduate degree and honed my skills as a software developer. This hands-on experience sharpened my problem-solving abilities and gave me the confidence to tackle real-world tech challenges.  
+                But it’s not just about coding for me—I’m driven by a desire to make a meaningful impact. That’s why I’ve actively volunteered with U&I, an incredible organization dedicated to children's rights, education, and empowerment.  
+                When I’m not immersed in tech, you’ll find me exploring new cultures, traveling the world, sipping on coffee, or enjoying the great outdoors with my dog. I’m also an art enthusiast, creating beautiful pieces that combine my love for design and innovation.  
+                One of my recent projects is this very e-portfolio, which showcases my journey, my technical expertise, and my creative endeavors. From image editing and web design to video production, screencasting, and digital animation, each project reflects the unique blend of creativity and technology that defines my work.  
+                I’m beyond excited to share my story with you and show you what I’ve been working on! Let’s dive in!
+            </p>
+            </section>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title" data-aos="fade-up">My Projects</h2>
+        <div class="projects-container">
+            <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+                <h3>Image Editing</h3>
+                <p>Designed a book cover for "The Devil wears Prada" and a logo for a cafe "Bloom and Brew" using Adobe Photoshop, Adobe Illustrator and Canva</p>
+                <a href="/Users/anushamylavarapu/Desktop/E-portfolio/image-editing.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+                <h3>Web Design</h3>
+                <p>Developed interactive web pages featuring a fun quiz on coffee and a drag-and-drop quiz on famous literary books, leveraging HTML, CSS, and JavaScript.</p>
+                <a href="web.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="300">
+                <h3>Video Production</h3>
+                <p>Created an Educational Informative Video on the Taj Mahal</p>
+                <a href="video.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="400">
+                <h3>Digital Animation</h3>
+                <p>Briefly summarize your work on Project 6 in this class, keeping each description about the same length to ensure the boxes appear uniform in size</p>
+                <a href="animation.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="500">
+                <h3>Screencasting</h3>
+                <p>Briefly summarize your work on Project 7 in this class, keeping each description about the same length to ensure the boxes appear uniform in size</p>
+                <a href="screencast.html" class="project-button"><span>Learn More</span></a>
+            </div>
+            <div class="project-card" data-aos="flip-up" data-aos-delay="600">
+                <h3>E-Portfolio</h3>
+                <p>Developed an e-portfolio as the final project for the EME6208 course, showcasing all the projects completed throughout the course. This portfolio highlights my web development skills and was built using HTML, CSS, and JavaScript</p>
+                <a href="#contact" class="project-button"><span>Contact Me</span></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <!-- Email -->
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:jonnagaddheerajk@ufl.edu">amylavarapu@ufl.edu</a>
+
+        </div>
+        <!-- LinkedIn -->
+        <div class="contact-item">
+            <i class="fab fa-linkedin-in"></i>
+            <a href="https://www.linkedin.com/in/anusha-m-278536190/" target="_blank">LinkedIn Profile</a>
+        </div>
+        <!-- GitHub -->
+        <div class="contact-item">
+            <i class="fab fa-github"></i>
+            <a href="https://github.com/anusha3598" target="_blank">GitHub Profile</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- AOS Script for Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 900,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+
+    <!-- Scroll Detection Script -->
+    <script>
+        window.addEventListener("scroll", function () {
+            const aboutSection = document.querySelector(".about-section");
+            const profileImage = document.querySelector(".profile-image");
+
+            if (window.scrollY > aboutSection.offsetTop + aboutSection.offsetHeight) {
+                aboutSection.classList.add("scrolled");
+            } else {
+                aboutSection.classList.remove("scrolled");
+            }
+        });
+    </script>
+</body>
+</html>
