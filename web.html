@@ -16,57 +16,134 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
 
+        .header {
+            background-color: #333;
+            padding: 1rem 0;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .web-design-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .project-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .project-box h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .project-box p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
 <body>
     <!-- Header -->
     <header class="header" data-aos="fade-down">
         <nav class="navbar">
             <ul class="nav-links">
-                <li><a href="#about" data-aos="fade-up" style="color:white;">About</a></li>
-                <li><a href="#projects" data-aos="fade-up" data-aos-delay="100" style="color:white;">Projects</a></li>
-                <li><a href="#contact" data-aos="fade-up" style="color:white;">Contact Me</a></li>
+                <li><a href="#about" data-aos="fade-up">About</a></li>
+                <li><a href="#projects" data-aos="fade-up" data-aos-delay="100">Projects</a></li>
+                <li><a href="#contact" data-aos="fade-up">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Web Design Section -->
     <section id="web-design" class="web-design-section">
-        <h2 class="section-title" data-aos="fade-up" style = "color: black;">My Web Design Projects</h2>
-        <p> In this project, I designed two interactive quizzes: Literary Matchmaking Drag-and-Drop Quiz and a Freshly Brewed Quiz, each offering a unique and engaging experience for users. Both projects allowed me to enhance my skills in creative design and interactive web development, combining storytelling with technical expertise to deliver engaging user experiences. Whether testing coffee knowledge or diving into the literary world, these quizzes highlight my ability to merge functionality with aesthetics for diverse audiences.</p>
-        <p>The Literary Matchmaking Drag-and-Drop Quiz invites users to match popular books like Gone Girl and Snow Crash with their genres. Featuring a sleek design inspired by bookshelves, the quiz uses draggable items and grid-arranged genre boxes with subtle shadows for a library-like feel.
-
-Dynamic borders provide immediate feedback on correct or incorrect matches, ensuring an interactive experience. Built with JavaScript and CSS, the quiz offers smooth functionality and a user-friendly interface, combining creativity and technical skill in a fun activity for book lovers.</p>
-        <p>Freshly Brewed Quiz is a playful and dynamic interactive quiz crafted for coffee enthusiasts. It features 10 thoughtfully curated questions blending humorous, witty prompts with fascinating coffee facts, ensuring a balance of fun and knowledge.The design immerses users in a coffee-themed world. Playful yet modern typography complements the quiz’s lighthearted tone, while styled buttons, input fields, and animations provide a smooth, engaging user experience.Technically, the quiz is built using HTML, CSS, and JavaScript. JavaScript powers the question logic, score tracking, and real-time feedback system, while CSS adds responsive styling and smooth transitions. Each question is designed with a coffee-centric aesthetic, creating a visually cohesive and immersive theme.</p>
-        <div class="project-card" data-aos="flip-up" data-aos-delay="100">
+        <h2 class="section-title" data-aos="fade-up">My Web Design Projects</h2>
+        
+        <div class="project-box" data-aos="fade-up">
             <h3>Book-to-Genre Quiz</h3>
-            <p>This quiz allows users to match popular books to their respective genres. It was built using HTML, CSS, and JavaScript to create an interactive and engaging experience.</p>
-            <a href="https://anusha3598.github.io/Book-to-Genre/" class="project-button"><span>Take the Quiz</span></a>
+            <p>
+                The Literary Matchmaking Drag-and-Drop Quiz invites users to match popular books like <em>Gone Girl</em> and <em>Snow Crash</em> with their genres. 
+                Featuring a sleek design inspired by bookshelves, the quiz uses draggable items and grid-arranged genre boxes with subtle shadows for a library-like feel.
+                Built with HTML, CSS, and JavaScript, it offers smooth functionality and an interactive experience for book lovers.
+            </p>
+            <a href="https://anusha3598.github.io/Book-to-Genre/" class="project-button">Take the Quiz</a>
         </div>
-
-        <div class="project-card" data-aos="flip-up" data-aos-delay="200">
+        
+        <div class="project-box" data-aos="fade-up" data-aos-delay="100">
             <h3>Coffee Quiz</h3>
-            <p>A fun quiz designed on coffee! This project was built using HTML, CSS, and JavaScript, offering a simple and smooth user experience.</p>
-            <a href="https://anusha3598.github.io/Quiz_anusha/" class="project-button"><span>Take the Quiz</span></a>
+            <p>
+                Freshly Brewed Quiz is a playful and dynamic interactive quiz crafted for coffee enthusiasts. It features 10 thoughtfully curated questions blending humorous,
+                witty prompts with fascinating coffee facts. Designed with a coffee-centric aesthetic, it creates a visually immersive experience for users.
+            </p>
+            <a href="https://anusha3598.github.io/Quiz_anusha/" class="project-button">Take the Quiz</a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section" >
-        <h2 >Contact Me</h2>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
         <div class="contact-info">
-            <!-- Email -->
             <div class="contact-item">
                 <i class="fas fa-envelope"></i>
                 <a href="mailto:amylavarapu@ufl.edu">amylavarapu@ufl.edu</a>
             </div>
-            <!-- LinkedIn -->
             <div class="contact-item">
                 <i class="fab fa-linkedin-in"></i>
                 <a href="https://www.linkedin.com/in/anusha-m-278536190/" target="_blank">LinkedIn Profile</a>
             </div>
-            <!-- GitHub -->
             <div class="contact-item">
                 <i class="fab fa-github"></i>
                 <a href="https://github.com/anusha3598" target="_blank">GitHub Profile</a>
@@ -74,7 +151,7 @@ Dynamic borders provide immediate feedback on correct or incorrect matches, ensu
         </div>
     </section>
 
-    <!-- AOS Script for Animations -->
+    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
