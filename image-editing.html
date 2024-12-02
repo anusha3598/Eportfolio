@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        /* General Body Styling */
         body {
             font-family: 'Montserrat', Arial, sans-serif;
             color: black;
@@ -20,59 +19,61 @@
             background-position: center;
         }
 
-        /* Header */
         header {
-            background-color: white;
-            padding: 10px 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            padding: 20px 0;
         }
 
-        nav ul {
-            list-style: none;
-            padding: 0;
+        .navbar {
             display: flex;
-            justify-content: flex-end;
-            gap: 20px;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
         }
 
-        nav ul li a {
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            font-size: 16px;
+        }
+
+        .nav-links a {
             text-decoration: none;
             color: black;
-            font-weight: 600;
+            font-weight: bold;
         }
 
-        nav ul li a:hover {
-            color: #007BFF;
-        }
-
-        /* Section Styling */
         section.content-section {
             padding: 40px 20px;
-            max-width: 900px;
-            margin: auto;
-            background-color: rgba(255, 255, 255, 0.9); /* White, semi-transparent */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-
-        section h2 {
-            text-align: center;
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         .content-item {
+            width: 80%;
+            max-width: 800px;
             margin-bottom: 40px;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .content-image {
+        .content-item img {
             display: block;
             max-width: 100%;
+            height: auto;
             margin: 20px auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* Footer Styling */
         footer {
             display: flex;
             flex-direction: column;
@@ -82,11 +83,10 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: white;
-            padding: 10px 0;
-            font-size: 0.9rem;
+            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
+            padding: 10px 20px;
+            font-size: 14px;
             border-top: 1px solid #ccc;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
 
         footer a {
@@ -97,12 +97,16 @@
         footer a:hover {
             text-decoration: underline;
         }
+
+        h2, h3 {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#projects">Projects</a></li>
@@ -111,26 +115,23 @@
         </nav>
     </header>
 
-    <!-- Content Section -->
+    <!-- Image Editing Content -->
     <section class="content-section">
         <h2>Image Editing</h2>
         <div class="content-item">
             <h3>Book Cover</h3>
             <img src="book-cover.jpg" alt="Image Editing Example 1" class="content-image">
-            <p>
-                PART 1<br><br>
-                For this project, I had the exciting opportunity to design a book cover of my choice, and I selected *The Devil Wears Prada* by Lauren Weisberger...
-                <!-- Shortened for brevity -->
-            </p>
+            <p>PART 1<br><br>For this project, I had the exciting opportunity to design a book cover of my choice, and I selected *The Devil Wears Prada* by Lauren Weisberger. This novel delves into themes of ambition, personal growth, and relationships through the journey of Andrea Sachs, an assistant to the formidable Miranda Priestly at *Runway* magazine.  
+            I created the design using Canva, leveraging its intuitive tools to bring my vision to life. I opted for a minimalist black background with a subtle gradient, reflecting the elegance and sophistication of the fashion industry. The title, *The Devil Wears Prada*, is styled in bold red to symbolize power and intensity, while the author’s name is presented in a smaller, refined font to maintain balance.  
+            To emphasize the novel's widespread acclaim, I added a "#1 New York Times Bestseller" badge. The main image features a stylish woman representing Miranda Priestly, adorned with devil horns and a tail to hint at her complex and commanding nature.  
+            The layout prioritizes a clean and balanced composition, harmonizing the title, imagery, and author’s name. Careful use of white space enhances the overall sophistication and minimalist aesthetic of the cover.</p>
         </div>
         <div class="content-item">
             <h3>Logo</h3>
             <img src="Bloom-Brew.jpeg" alt="Image Editing Example 2" class="content-image">
-            <p>
-                PART 2<br><br>
-                I designed a logo for a café I hope to open, combining my passion for coffee and nature into a visually appealing and meaningful design...
-                <!-- Shortened for brevity -->
-            </p>
+            <p>PART 2<br><br>
+            I designed a logo for a café I hope to open, combining my passion for coffee and nature into a visually appealing and meaningful design. The logo features a steaming coffee cup with a blooming flower emerging from it, symbolizing growth, freshness, and the nurturing environment I envision for the café.  
+            The color palette is carefully chosen to represent the café’s essence: earthy brown tones evoke the richness of coffee, while soft blue accents add a touch of freshness and tranquility. The name *Bloom & Brew* is styled in bold, modern typography, exuding confidence and warmth. Beneath it, "Coffee Shop" appears in a smaller, elegant font to balance the design and provide clarity.</p>
         </div>
     </section>
 
