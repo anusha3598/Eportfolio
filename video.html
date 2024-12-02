@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educational Video Project</title>
     <style>
-       body {
-        font-family: Arial, sans-serif;
-        color: black;
-        margin: 0;
-        padding: 0;
-        background-image: url('white.jpeg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed; /* Ensures the image stays in place when scrolling */
-        background-position: center;
-    }
+        body {
+            font-family: Arial, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+            background-image: url('white.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Ensures the image stays in place when scrolling */
+            background-position: center;
+        }
         header {
             text-align: center;
             margin: 10px 0; /* Reduced vertical space */
@@ -25,7 +25,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            min-height: calc(100vh - 60px); /* Adjusted to ensure balance */
+            min-height: calc(100vh - 120px); /* Adjusted for balanced footer spacing */
         }
         section {
             width: 80%;
@@ -53,9 +53,18 @@
             border: none;
             margin-top: 20px;
         }
-           footer a {
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+        footer a {
             color: rgb(18, 148, 241);
             text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -81,8 +90,7 @@
             </p>
         </section>
     </main>
-
-     <footer>
+    <footer>
         <p>&copy; 2024 Anusha Mylavarapu. All rights reserved.</p>
         <p>
             Visit the 
