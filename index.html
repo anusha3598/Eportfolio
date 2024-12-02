@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
+    <!-- AOS Library for animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<!-- AOS Library for animations -->
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 
-<!-- Custom CSS -->
-<link rel="stylesheet" href="style.css">
+    <style>
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            margin-top: 50px;
+            background-color: #f9f9f9;
+            color: #333;
+            border-top: 1px solid #ddd;
+        }
+
+        footer a {
+            color: rgb(18, 148, 241);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
-
 <body>
     <!-- Header -->
     <header class="header" data-aos="fade-down">
@@ -32,25 +51,23 @@
     </header>
 
     <!-- About Section -->
-<section id="about" class="about-section" data-aos="fade-up">
-    <div class="about-content" data-aos="flip-left">
-        <div class="about-details">
-            <img src="WhatsApp.jpeg" alt="Profile Picture" class="profile-image">
+    <section id="about" class="about-section" data-aos="fade-up">
+        <div class="about-content" data-aos="flip-left">
+            <div class="about-details">
+                <img src="WhatsApp.jpeg" alt="Profile Picture" class="profile-image">
+            </div>
+            <h2 style="color: black;">Anusha Mylavarapu</h2>
+            <div class="about-extra">
+                <section class="intro-section">
+                    <p class="intro-text" style="color: black;">
+                        Hi there! I’m Anusha, a Master’s student in Computer Science at the University of Florida, passionate about leveraging technology to solve real-world challenges. My journey began in India, where I earned my undergraduate degree and gained hands-on experience as a software developer. This experience sharpened my problem-solving abilities and fueled my confidence in tackling complex tech challenges. My technical expertise includes Python, Java, SQL, and web development.
+                        Outside the world of tech, I’m an explorer and dreamer at heart. Whether it’s traveling to new places, painting, experiencing diverse cultures, or enjoying a great cup of coffee, I’m always seeking inspiration and creativity. As part of my Master’s coursework, I’m enrolled in EME 6208: Emerging Learning Technology, where I’m advancing my skills in image editing, web design, video production, screencasting, and digital animation. This course is helping me craft a personal e-portfolio that beautifully reflects the synergy between my technical skills and creative passion.
+                        I’m excited to connect, share my journey, and showcase the work that inspires my love for technology and creativity!
+                    </p>
+                </section>
+            </div>
         </div>
-        <h2 style="color: black;">Anusha Mylavarapu</h2>
-        <div class="about-extra">
-            
-            
-            <section class="intro-section">
-            <p class="intro-text" style = "color: black">Hi there! I’m Anusha, a Master’s student in Computer Science at the University of Florida, passionate about leveraging technology to solve real-world challenges. My journey began in India, where I earned my undergraduate degree and gained hands-on experience as a software developer. This experience sharpened my problem-solving abilities and fueled my confidence in tackling complex tech challenges. My technical expertise includes Python, Java, SQL, and web development.  
-Outside the world of tech, I’m an explorer and dreamer at heart. Whether it’s traveling to new places, painting, experiencing diverse cultures, or enjoying a great cup of coffee, I’m always seeking inspiration and creativity.  As part of my Master’s coursework, I’m enrolled in EME 6208: Emerging Learning Technology,where I’m advancing my skills in image editing, web design, video production, screencasting, and digital animation. This course is helping me craft a personal e-portfolio that beautifully reflects the synergy between my technical skills and creative passion.  
-I’m excited to connect, share my journey, and showcase the work that inspires my love for technology and creativity!
-            </p>
-            </section>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
@@ -90,38 +107,36 @@ I’m excited to connect, share my journey, and showcase the work that inspires 
     </section>
 
     <!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <h2>Contact Me</h2>
-    <div class="contact-info">
-        <!-- Email -->
-        <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:jonnagaddheerajk@ufl.edu">amylavarapu@ufl.edu</a>
+    <section id="contact" class="contact-section">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:amylavarapu@ufl.edu">amylavarapu@ufl.edu</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin-in"></i>
+                <a href="https://www.linkedin.com/in/anusha-m-278536190/" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/anusha3598" target="_blank">GitHub Profile</a>
+            </div>
+        </div>
+    </section>
 
-        </div>
-        <!-- LinkedIn -->
-        <div class="contact-item">
-            <i class="fab fa-linkedin-in"></i>
-            <a href="https://www.linkedin.com/in/anusha-m-278536190/" target="_blank">LinkedIn Profile</a>
-        </div>
-        <!-- GitHub -->
-        <div class="contact-item">
-            <i class="fab fa-github"></i>
-            <a href="https://github.com/anusha3598" target="_blank">GitHub Profile</a>
-        </div>
-    </div>
-</section>
-<footer>
-    <p>&copy; 2024 Anusha Mylavarapu. All rights reserved.</p>
-    <p>
-        Visit the 
-        <a href="http://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer" style="color: rgb(18, 148, 241); text-decoration: none;">
-            UF EDUCATIONAL TECHNOLOGY HOMEPAGE
-        </a>.
-    </p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Anusha Mylavarapu. All rights reserved.</p>
+        <p>
+            Visit the 
+            <a href="http://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer">
+                UF EDUCATIONAL TECHNOLOGY HOMEPAGE
+            </a>.
+        </p>
+    </footer>
 
-    <!-- AOS Script for Animations -->
+    <!-- AOS Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
@@ -130,19 +145,6 @@ I’m excited to connect, share my journey, and showcase the work that inspires 
             once: true
         });
     </script>
-
-    <!-- Scroll Detection Script -->
-    <script>
-        window.addEventListener("scroll", function () {
-            const aboutSection = document.querySelector(".about-section");
-            const profileImage = document.querySelector(".profile-image");
-
-            if (window.scrollY > aboutSection.offsetTop + aboutSection.offsetHeight) {
-                aboutSection.classList.add("scrolled");
-            } else {
-                aboutSection.classList.remove("scrolled");
-            }
-        });
-    </script>
 </body>
 </html>
+
