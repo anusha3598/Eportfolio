@@ -6,106 +6,93 @@
     <title>Image Editing</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+
     <style>
         body {
-            font-family: 'Montserrat', Arial, sans-serif;
-            color: black;
+            font-family: 'Montserrat', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('white.jpeg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
+            color: black;
+            background-color: white;
         }
 
         header {
-            text-align: center;
-            padding: 20px 0;
+            background: #007bff;
+            color: white;
+            padding: 15px 20px;
         }
 
-        .navbar {
+        header .navbar {
             display: flex;
             justify-content: center;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            border-bottom: 1px solid #ccc;
         }
 
-        .nav-links {
+        header .nav-links li {
+            display: inline;
             list-style: none;
-            display: flex;
-            gap: 15px;
-            margin: 0;
-            padding: 0;
+            margin: 0 10px;
         }
 
-        .nav-links li {
-            font-size: 16px;
-        }
-
-        .nav-links a {
+        header .nav-links a {
+            color: white;
             text-decoration: none;
-            color: black;
             font-weight: bold;
         }
 
         section.content-section {
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
         }
 
         .content-item {
-            width: 80%;
-            max-width: 800px;
-            margin-bottom: 40px;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
+            background-color: #f9f9f9;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .content-item h3 {
+            color: #007bff;
+            margin-bottom: 15px;
         }
 
         .content-item img {
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: 20px auto;
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .content-item p {
+            line-height: 1.6;
+            color: #333; /* Improved text contrast */
+            font-size: 16px;
         }
 
         footer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(255, 255, 255, 0.8); /* Transparent white background */
-            padding: 10px 20px;
-            font-size: 14px;
+            text-align: center;
+            padding: 15px;
+            background-color: #f5f5f5;
             border-top: 1px solid #ccc;
+            margin-top: 40px;
         }
 
         footer a {
-            color: rgb(18, 148, 241);
+            color: #007bff;
             text-decoration: none;
+            font-weight: bold;
         }
 
         footer a:hover {
             text-decoration: underline;
         }
-
-        h2, h3 {
-            text-align: center;
-        }
     </style>
 </head>
 <body>
+
     <!-- Header -->
-    <header class="header">
+    <header>
         <nav class="navbar">
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
@@ -115,23 +102,26 @@
         </nav>
     </header>
 
-    <!-- Image Editing Content -->
+    <!-- Content Section -->
     <section class="content-section">
-        <h2>Image Editing</h2>
+        <h2 style="text-align: center; color: #007bff;">Image Editing</h2>
+        
+        <!-- Book Cover Section -->
         <div class="content-item">
             <h3>Book Cover</h3>
-            <img src="book-cover.jpg" alt="Image Editing Example 1" class="content-image">
-            <p>PART 1<br><br>For this project, I had the exciting opportunity to design a book cover of my choice, and I selected *The Devil Wears Prada* by Lauren Weisberger. This novel delves into themes of ambition, personal growth, and relationships through the journey of Andrea Sachs, an assistant to the formidable Miranda Priestly at *Runway* magazine.  
-            I created the design using Canva, leveraging its intuitive tools to bring my vision to life. I opted for a minimalist black background with a subtle gradient, reflecting the elegance and sophistication of the fashion industry. The title, *The Devil Wears Prada*, is styled in bold red to symbolize power and intensity, while the author’s name is presented in a smaller, refined font to maintain balance.  
-            To emphasize the novel's widespread acclaim, I added a "#1 New York Times Bestseller" badge. The main image features a stylish woman representing Miranda Priestly, adorned with devil horns and a tail to hint at her complex and commanding nature.  
-            The layout prioritizes a clean and balanced composition, harmonizing the title, imagery, and author’s name. Careful use of white space enhances the overall sophistication and minimalist aesthetic of the cover.</p>
+            <img src="book-cover.jpg" alt="The Devil Wears Prada Book Cover">
+            <p>
+                For this project, I designed a cover for *The Devil Wears Prada*. The minimalist black background with a bold red title reflects the story's intense and stylish themes. Tools like Canva allowed me to experiment with layout and design principles, creating a clean and balanced composition.
+            </p>
         </div>
+        
+        <!-- Logo Section -->
         <div class="content-item">
             <h3>Logo</h3>
-            <img src="Bloom-Brew.jpeg" alt="Image Editing Example 2" class="content-image">
-            <p>PART 2<br><br>
-            I designed a logo for a café I hope to open, combining my passion for coffee and nature into a visually appealing and meaningful design. The logo features a steaming coffee cup with a blooming flower emerging from it, symbolizing growth, freshness, and the nurturing environment I envision for the café.  
-            The color palette is carefully chosen to represent the café’s essence: earthy brown tones evoke the richness of coffee, while soft blue accents add a touch of freshness and tranquility. The name *Bloom & Brew* is styled in bold, modern typography, exuding confidence and warmth. Beneath it, "Coffee Shop" appears in a smaller, elegant font to balance the design and provide clarity.</p>
+            <img src="Bloom-Brew.jpeg" alt="Bloom & Brew Logo">
+            <p>
+                Inspired by my love for coffee and nature, this logo blends the elements of a steaming coffee cup and blooming flowers. Earthy brown tones evoke coffee’s richness, while blue accents add freshness, symbolizing a nurturing and inviting café environment.
+            </p>
         </div>
     </section>
 
@@ -139,11 +129,12 @@
     <footer>
         <p>&copy; 2024 Anusha Mylavarapu. All rights reserved.</p>
         <p>
-            Visit the 
+            Visit the
             <a href="http://education.ufl.edu/educational-technology/" target="_blank" rel="noopener noreferrer">
-                UF EDUCATIONAL TECHNOLOGY HOMEPAGE
+                UF Educational Technology Homepage
             </a>.
         </p>
     </footer>
+
 </body>
 </html>
